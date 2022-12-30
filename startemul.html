@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Emscripten-Generated Code</title>
+   
+  </head>
+  <body style="background-color:black;">
+
+<table bordercolor="#5f5f5f"style="border-collapse: collapse; width: 80%; margin-left: 10%;height: 58px;" border="1">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 100%; height: 18px;"><img src="logo.png" style="display: block; margin-left: auto; margin-right: auto;"> </td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 100%; height: 22px;">
+<table bordercolor="#1f1f1f"style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<table bordercolor="#1f1f1f"style="border-collapse: collapse; width: 100%; height: 148px;" border="1">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 100%; height: 18px; font-weight: bold; color:white;">1) SELECCIONA EL JUEGO:<br></td>
+</tr>
+<tr style="height: 112px;">
+<td style="width: 100%; height: 112px;"><select id="selectRom" style="font-size: 18px; width: 80%; margin-left: 10%;" name="Juegos" size="16">
+<option value="Merceders">ADVENTURA EN EL CHACO 2</option>
+<option value="BMW">ASALTO AL SHOPPING  CHINA</option>
+<option value="Jaguar">CERRO PORTEÑO SOCCER</option>
+<option value="Lamborghini">COMBATE EN SALTO DEL GUAIRA</option>
+<option value="Ferrari">EL CARNICERO DE HERNANDARIAS</option>
+<option value="Merceders">CIUDAD DEL ESTE SITIADA</option>
+<option value="BMW">EL LOBISOMBRE DE ALTO PARANA</option>
+<option value="Ford">EL VAMPIRO DE YPACARAI</option>
+<option value="Jaguar">FUERZA AEREA GUARANI 2022</option>
+<option value="Lamborghini">FURIA EN ASUNCION</option>
+<option value="Merceders">GANGS OF PEDRO JUAN CABALLERO</option>
+<option value="BMW">GUERRILLEROS DEL CHACO</option>
+<option value="Jaguar">LA REVUELTA DE ASUNCION</option>
+<option value="Lamborghini">KUNG FU TORTUGA 3</option>
+<option value="Lamborghini">LIGA NACIONAL DE BASKETBOL</option>
+<option value="Ferrari">LUNEY TOONES COMES TO PARAGUAY</option>
+<option value="Lamborghini">LOS HERMANOS MARIO</option>
+<option value="Ford">LOS HERMANOS MARIO 2</option>
+<option value="Merceders">LOS MUERTOS VIVOS DE HERNANDARIAS</option>
+<option value="BMW">PARAGUAYAN NINJA III</option>
+<option value="Jaguar">PELIGRO EN ASUNCION</option>
+<option value="Lamborghini">PIRATAS DEL RIO ACARAY</option>
+<option value="Ferrari">ROBOXIRU</option>
+</select></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 100%; height: 18px; font-weight: bold; color:white;">
+<br>2) PRESIONA EL BOTON  EMPEZAR:
+<button onclick="cargaRom()" style="background-color: #4CAF50; color: white; border: none; width: 40%; height: 36px; margin-left: 5%;" type="&quot;button"> << EMPEZAR LA BATALLA! >></button></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 60%;">
+<img id="notice" onclick="haceclick()" src="notice.png" style="position: absolute; left: 1100px; top: 140px;"> 
+    
+  <canvas style="margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; display: block;" class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
+
+</td>
+</tr>
+</tbody>
+</table>
+<table bordercolor="#1f1f1f"style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%; color:white; font-weight: bold;"><br>3) COMO JUGAR:<br> <br> <img src="Instruccion.png"></td>
+<td style="width: 25%;"><img src="Pirateria.png"></td>
+</tr>
+</tbody>
+</table>
+</td>
+
+<script type='text/javascript'>
+
+	function apagaUrl() {
+		 window.history.replaceState('','','/');
+	};
+
+	function cargaRom() {
+		var laRom = document.getElementById("selectRom").selectedIndex;
+		switch(laRom) {
+			case 0:
+				window.location = "startemul.html?id=0";
+				break;
+			case 1:
+				window.location = "startemul.html?id=1";
+				break;
+			case 2:
+				window.location = "startemul.html?id=2";
+				break;
+			case 3:
+				window.location = "startemul.html?id=3";
+				break;
+			case 4:
+				window.location = "startemul.html?id=4";
+				break;
+			case 5:
+				window.location = "startemul.html?id=5";
+				break;
+			case 6:
+				window.location = "startemul.html?id=6";
+				break;
+			case 7:
+				window.location = "startemul.html?id=7";
+				break;
+			case 8:
+				window.location = "startemul.html?id=8";
+				break;
+			case 9:
+				window.location = "startemul.html?id=9";
+				break;
+			case 10:
+				window.location = "startemul.html?id=10";
+				break;
+			case 11:
+				window.location = "startemul.html?id=11";
+				break;
+			case 12:
+				window.location = "startemul.html?id=12";
+				break;
+			case 13:
+				window.location = "startemul.html?id=13";
+				break;
+			case 14:
+				window.location = "startemul.html?id=14";startemul
+				break;
+			case 15:
+				window.location = "startemul.html?id=15";
+				break;
+			case 16:
+				window.location = "startemul.html?id=16";
+				break;
+			case 17:
+				window.location = "startemul.html?id=17";
+				break;
+			case 18:
+				window.location = "startemul.html?id=18";
+				break;
+			case 19:
+				window.location = "startemul.html?id=19";
+				break;
+			case 20:
+				window.location = "startemul.html?id=20";
+				break;
+			case 21:
+				window.location = "startemul.html?id=21";
+				break;
+			case 22:
+				window.location = "startemul.html?id=22";
+				break;
+
+		}
+	};
+ 
+      var Module = {
+        preRun: [],
+        postRun: [],
+        
+        canvas: (function() {
+          var canvas = document.getElementById('canvas');
+          return canvas;
+        })(),
+        
+        
+      };
+     
+     
+    </script>
+    <script async type="text/javascript" src="startemul.js"></script>
+
+  </body>
+</html>
+
